@@ -1,7 +1,8 @@
 package com.ecaray.login.applike;
 
-import com.luojilab.componentlib.applicationlike.IApplicationLike;
-import com.luojilab.componentlib.router.ui.UIRouter;
+
+import com.luojilab.component.componentlib.applicationlike.IApplicationLike;
+import com.luojilab.component.componentlib.router.ui.UIRouter;
 
 /**
  * @author Carl

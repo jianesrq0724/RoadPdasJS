@@ -148,7 +148,7 @@ class ComCodeTransform extends Transform {
     private boolean isActivator(CtClass ctClass) {
         try {
             for (CtClass ctClassInter : ctClass.getInterfaces()) {
-                if ("com.luojilab.componentlib.applicationlike.IApplicationLike".equals(ctClassInter.name)) {
+                if ("com.luojilab.component.componentlib.applicationlike.IApplicationLike".equals(ctClassInter.name)) {
                     return true
                 }
             }

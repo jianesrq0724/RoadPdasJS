@@ -11,8 +11,8 @@ import com.ecaray.basicres.helper.CrashHandler;
 import com.ecaray.basicres.util.BuildConfigUtils;
 import com.ecaray.basicres.util.Utils;
 import com.ecaray.basicres.util.life.ELifeUtil;
-import com.luojilab.componentlib.router.ui.UIRouter;
 import com.ecaray.e_pda_js.BuildConfig;
+import com.luojilab.component.componentlib.router.ui.UIRouter;
 
 import org.litepal.LitePal;
 

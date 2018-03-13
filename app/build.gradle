@@ -154,11 +154,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+//    annotationProcessor project(':router-anno-compiler')
 
     api project(':componentservice')
-
-
 
     developImplementation project(':codenomallib')
     experimentImplementation project(':codenomallib')
