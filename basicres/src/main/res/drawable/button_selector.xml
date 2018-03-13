@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:state_checked="false"-->
+          <!--android:drawable="@drawable/btn_submit_shape_gray"/>-->
+    <!--<item android:state_checked="true"-->
+          <!--android:drawable="@drawable/btn_submit_shape_blue"/>-->
+
+    <item android:state_enabled="false"
+          android:drawable="@drawable/btn_submit_shape_gray"/>
+    <item android:state_enabled="true"
+          android:drawable="@drawable/btn_submit_shape_blue"/>
+
+</selector>

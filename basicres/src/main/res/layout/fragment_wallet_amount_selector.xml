@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_amount_one"
+        style="@style/wallet_amount_selector"
+        android:textColor="@color/black"
+        android:text="50元" />
+
+    <TextView
+        android:id="@+id/tv_amount_two"
+        style="@style/wallet_amount_selector"
+        android:text="100元" />
+
+    <TextView
+        android:id="@+id/tv_amount_three"
+        style="@style/wallet_amount_selector"
+        android:text="500元" />
+
+</LinearLayout>

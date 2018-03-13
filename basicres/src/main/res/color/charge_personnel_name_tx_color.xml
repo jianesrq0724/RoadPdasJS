@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 绑定未绑定车牌页面的车牌字体颜色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="true" android:color="@color/white"></item>
+    <item android:state_pressed= "true" android:color="@color/white"></item>
+    <item android:state_selected= "false" android:color="@color/text_light_gray_2"></item>
+    <item android:color="@color/text_light_gray_2"></item>
+</selector>

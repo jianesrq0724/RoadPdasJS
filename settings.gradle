@@ -1,0 +1,1 @@
+include ':app', ':componentservice', ':basicres', ':basiclib', ':codetestlib', ':codenomallib', ':greendaolib', ':evoicelib', ':build-gradle', ':logincomponent', ':router-annotation', ':componentlib', ':router-anno-compiler'

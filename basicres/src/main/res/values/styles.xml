@@ -1,0 +1,339 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+         <!--Customize your theme here. -->
+        <item name="colorPrimary">@color/main_theme</item>
+        <item name="colorPrimaryDark">@color/main_theme</item>
+        <item name="colorAccent">@color/main_theme</item>
+    </style>
+
+    <style name="AppLogin" parent="AppTheme">
+        <item name="android:windowBackground">@color/main_theme</item>
+    </style>
+
+    <!--loading-->
+    <style name="ProgressBaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="ProgressDialog" parent="@style/ProgressBaseDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <style name="wallet_amount_selector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/background_wallet_amount_unselected</item>
+        <item name="android:textSize">@dimen/text_15_dimens</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--弹出框-->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 模糊 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <!--签入签出获取地址加载圈-->
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/check_progress_bar</item>
+        <item name="android:minWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+
+    <!-- 违章取证文字样式 -->
+    <style name="tv_style_order">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">@dimen/text_16_dimens</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 违章取证文字样式 -->
+    <style name="tv_style_order_big">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">@dimen/text_20_dimens</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_order_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">@dimen/text_detail_title_dimens</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 申请停车页面文字样式 -->
+    <style name="tv_style_apply_park_left">
+        <item name="android:layout_height">39dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">@dimen/text_20_dimens</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="tv_style_apply_park_right">
+        <item name="android:layout_height">39dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/text_20_dimens</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 拍照按钮文字样式 -->
+    <style name="tv_take_pic_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:text">@string/berth_take_photo</item>
+        <item name="android:textColor">@color/main_theme</item>
+        <item name="android:textSize">@dimen/text_20_dimens</item>
+    </style>
+
+    <!-- 拍照按钮图标样式 -->
+    <style name="iv_take_pic_style">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@mipmap/berth_camera_ic</item>
+    </style>
+
+    <style name="ll_take_pic_style">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/berth_theme_line_rec</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- 图片删除按钮样式 -->
+    <style name="bt_delete_pic">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:background">@mipmap/pub_photo_delete_ic</item>
+    </style>
+
+    <!-- 水平分割线的样式 -->
+    <style name="horizontal_line_style">
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <!-- 水平虚线分割线的样式 -->
+    <style name="horizontal_dotted_line_style">
+        <item name="android:background">@drawable/berth_shape_dot_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="DialogStyleBottom" parent="android:Theme.Dialog">
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/main_theme</item>
+        <!--Toolbar颜色-->
+        <item name="colorPrimary">@color/main_theme</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 通用提交按钮的样式 -->
+    <style name="submit_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_submit_shape_blue</item>
+        <item name="android:textSize">@dimen/text_22_dimens</item>
+        <item name="android:textColor">@color/button_submit_tx_color</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+    </style>
+
+    <!-- 西安订单界面按钮提交样式 -->
+    <style name="submit_button_style_child" parent="submit_button_style">
+        <item name="android:textSize">@dimen/text_18_dimens</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">4dip</item>
+    </style>
+
+    <!-- 灰色提交按钮的样式 -->
+    <style name="submit_grey_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_submit_shape_grey</item>
+        <item name="android:textSize">@dimen/text_22_dimens</item>
+        <item name="android:textColor">@color/button_submit_tx_color</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+    </style>
+
+    <!-- list view 加载更多loading样式 -->
+    <style name="ProgressBarMiddle">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:indeterminateDrawable">@anim/list_view_refresh_progress_old</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+
+    <!--numberpicker-->
+    <style name="SampleTheme.Light" parent="@style/AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+    </style>
+
+    <!--KeyboardView 自定义键盘样式-->
+    <style name="KeyboardView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/keyboard_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:keyBackground">@drawable/function_white_bg</item>
+        <item name="android:keyPreviewLayout">@layout/pub_item_keyboard</item>
+        <item name="android:keyTextColor">@color/text_black</item>
+        <item name="android:keyTextSize">@dimen/text_20_dimens</item>
+        <item name="android:labelTextSize">@dimen/text_18_dimens</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="right_gery_arrow_style">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@mipmap/pub_right_gery_arrow_ic</item>
+    </style>
+
+    <style name="right_white_arrow_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@mipmap/pub_right_arrow_ic</item>
+    </style>
+    <!-- radiobutton的样式-->
+    <!--<style name="rb_style">-->
+        <!--<item name="android:layout_width">0dp</item>-->
+        <!--<item name="android:layout_weight">1</item>-->
+        <!--<item name="android:layout_height">20dp</item>-->
+        <!--<item name="android:button">@null</item>-->
+        <!--<item name="android:background">@drawable/button_selector</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+    <!--</style>-->
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="push_item_voice_tx_style_type">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_16_dimens</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="push_item_voice_tx_style_tip_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tip_color</item>
+        <item name="android:textSize">@dimen/text_13_dimens</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="push_item_voice_tx_style_tip_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tip_color</item>
+        <item name="android:textSize">@dimen/text_13_dimens</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+
+</resources>

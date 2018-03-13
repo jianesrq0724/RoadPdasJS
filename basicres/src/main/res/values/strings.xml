@@ -1,0 +1,585 @@
+<resources>
+    <string name="app_name">泊车收费</string>
+
+    <!-- 车牌前两位 -->
+    <string name="pro_name">粤</string>
+    <string name="city_first_letter">A</string>
+
+    <!--加载-->
+    <string name="loading">加载中&#8230;</string>
+
+    <!--处理中-->
+    <string name="processed">处理中</string>
+    <!--处理失败-->
+    <string name="processed_fail">处理失败，请联系后台人员</string>
+
+    <!--公共-->
+    <string name="ok">确定</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="commit">提交</string>
+    <string name="clear">清除</string>
+    <string name="back">返回</string>
+    <string name="no_car_plate">无车牌</string>
+    <string name="car_num_can_not_be_null">车牌号不能为空</string>
+    <string name="car_num_not_right">车牌号格式不对</string>
+    <string name="default_no_value">--</string>
+    <string name="loading_data">正在获取数据，请稍候</string>
+    <string name="loading_error_and_retry">订单数据获取失败，请重试</string>
+
+    <!-- 提示 -->
+    <string name="common_get_fail">页面加载失败，点击页面重试</string>
+    <string name="common_get_fail_2">页面加载失败</string>
+    <string name="common_none_more_data">没有更多数据啦！</string>
+    <string name="common_no_network_new">网络出错</string>
+    <string name="common_system_error">系统异常</string>
+    <string name="search_order_null">未找到停车订单</string>
+    <string name="owner_had_pay">此订单车主已进行自主缴费</string>
+
+    <!--错误信息-->
+    <string name="check_user_expire">检测到您的账号已在另一台设备上登录。</string>
+    <string name="relogin">重新登录</string>
+    <string name="pay_money_is_error">补缴金额有误</string>
+    <string name="service_search_data_none">未查询到数据</string>
+    <string name="order_none_existent">订单不存在</string>
+    <string name="pay_fail_tip">结算错误，请稍后再试。</string>
+
+    <!--版本更新-->
+    <string name="had_find_new_version">已检测到新版本</string>
+    <string name="update_now">马上更新</string>
+
+    <!--登录-->
+    <string name="city_parking">智慧停车</string>
+    <string name="pda_parking_terminal">路 边 停 车 收 费 终 端</string>
+    <string name="please_enter_account">请输入账户</string>
+    <string name="please_enter_pw">请输入密码</string>
+    <string name="login_user_name_not_null">用户名不能为空</string>
+    <string name="login_user_name_not_special_char">用户名不能包含特殊字符</string>
+    <string name="login_pw_not_null">密码不能为空</string>
+    <string name="login">登 录</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_version_name">V %1$s</string>
+
+    <!--首页-->
+    <string name="home_capital_manager_title">资金管理</string>
+    <string name="home_arrears_manager_title">欠费管理</string>
+    <string name="home_berth_park">停车缴费</string>
+    <string name="home_day_charge">当日缴费</string>
+    <string name="home_change_psw">修改密码</string>
+    <string name="home_check">下班签出</string>
+    <string name="home_amount_charge">账户充值</string>
+    <string name="fun_balance_inquiry">账户查询</string>
+    <string name="home_print_ticket">重印小票</string>
+    <string name="exit_app">是否退出应用？</string>
+    <string name="charge_success">缴费成功</string>
+
+
+    <!--账户充值-->
+    <string name="charge_money">充值金额</string>
+    <string name="charge_info">是否为账户"XXXX"充值</string>
+    <string name="other_money">其他金额</string>
+    <string name="account_charge_success">充值成功!</string>
+    <string name="input_money">请选择或输入金额</string>
+    <string name="input_money_too_low">单次最多充值500元</string>
+    <string name="digits">0123456789</string>
+    <string name="input_other_money">请输入其他金额</string>
+
+
+    <!--签到签出-->
+    <string name="take_pic_again">重拍</string>
+    <string name="sign_in">上班签到</string>
+    <string name="sign_out">下班签出</string>
+    <string name="sign_in_take_pic">签到拍照</string>
+    <string name="sign_out_take_pic">签出拍照</string>
+    <string name="request_address_again">重新获取</string>
+    <string name="get_location_address_fail">获取位置信息失败</string>
+    <string name="sign_out_success">签出成功</string>
+    <string name="sign_in_success">签到成功</string>
+    <string name="sign_in_now">正在签到&#8230;</string>
+    <string name="had_not_sign_please_relogin">尚未签到，请重新登录。</string>
+    <string name="not_sign">未签到</string>
+    <string name="sign_in_section_code_default">选择路段</string>
+    <string name="sign_in_section_code_select_hint">请选择路段</string>
+    <string name="sign_in_section_id_default">选择岗位</string>
+    <string name="sign_in_section_id_select_hint">请选择岗位</string>
+
+    <!--岗位选择-->
+    <string name="section_select_num">已选择（岗位：%1$d）</string>
+    <string name="section_select_num_defalut">已选择（岗位：0）</string>
+
+    <!--泊位列表-->
+    <string name="berth_data_not_new_refresh">泊位数据不是最新，点此重试刷新</string>
+    <string name="berth_type_all">全部</string>
+    <string name="berth_type_empty">空闲</string>
+    <string name="berth_type_wait_apply">待申请</string>
+    <string name="berth_type_not_apply">未申请</string>
+    <string name="berth_type_normal">已申请</string>
+    <string name="berth_normal_channel_type_app">手机APP</string>
+    <string name="berth_normal_channel_type_ivr">电话语音</string>
+    <string name="berth_normal_channel_type_rfid">电子标签</string>
+    <string name="berth_normal_channel_type_webchat">微信公众号</string>
+    <string name="berth_normal_channel_type_alipay">支付宝服务窗</string>
+    <string name="berth_type_over_time">超时</string>
+    <string name="berth_type_free">免费</string>
+    <string name="reserved">已预约</string>
+    <string name="berth_trouble">故障泊位</string>
+    <string name="berth_search_order_by_car_plate_hint">请输入车牌</string>
+
+    <!--待缴费-->
+    <string name="arrears_bt">欠费管理</string>
+    <string name="over_time_gone">超时驶离</string>
+    <string name="arrears_no_data_toast">没有欠费订单</string>
+    <string name="arrears_no_select_toast">没有选中欠费单</string>
+    <string name="enter_car_num_to_search">输入车牌号查询</string>
+    <string name="enter_berth_code_to_search">输入泊位号查询</string>
+    <string name="berth_search">搜索</string>
+    <string name="berth_empty"/>
+    <string name="no_arrears_record">暂无待缴费记录哦</string>
+    <string name="no_arrears_multi_record">暂无多次欠费车辆停车哦</string>
+    <string name="berth_arrears_in">入</string>
+    <string name="berth_arrears_out">出</string>
+    <string name="arrears_confirm">确定补缴</string>
+    <string name="choose_all_default">全选</string>
+    <string name="choose_all">全选</string>
+    <string name="settlement">结算</string>
+    <string name="search_total_tip">车牌\"%1$s\"共搜索到%2$d条欠费记录</string>
+
+    <!--申请停车-->
+    <string name="berth_park_num">泊&#160;&#160;位&#160;&#160;号：</string>
+    <string name="card_num">车&#160;&#160;牌&#160;&#160;号：</string>
+    <string name="section_name">路段名称：</string>
+    <string name="berth_park_in_time">驶入时间：</string>
+    <string name="berth_park_start_time">入场时间：</string>
+    <string name="berth_park_time">已停时长：</string>
+    <string name="berth_take_photo">拍照</string>
+    <string name="berth_card_size">车辆类型：</string>
+    <string name="berth_amount">缴费金额：</string>
+    <string name="berth_card_size_1">小型车</string>
+    <string name="berth_card_size_2">大型车</string>
+    <string name="berth_plate_num_color">车牌颜色：</string>
+    <string name="berth_apply">提交申请</string>
+    <string name="berth_apply_park">申请停车</string>
+    <string name="tips">提示</string>
+    <string name="please_commit_a_pic">请上传一张照片</string>
+    <string name="please_commit_pic">请上传照片</string>
+    <string name="confirm_car_escape">你确认该车辆已经逃逸了吗?</string>
+    <string name="confirm_car_leave">你确认该车辆已经驶离了吗?</string>
+    <string name="berth_take_photo_tip_1">车牌识别：</string>
+    <string name="berth_take_photo_tip_2">泊位+车牌：</string>
+    <string name="berth_take_photo_tip_3">背景参考：</string>
+    <string name="car_type_normal">普通</string>
+    <string name="car_type_new_energy">新能源</string>
+
+    <string name="berth_lpr">识别车牌</string>
+
+
+    <!--订单预览-->
+    <string name="berth_update_car_tip">温馨提示：</string>
+    <string name="berth_update_car_message">请输入正确的车牌</string>
+
+
+    <!--拍照取证-->
+    <string name="berth_take_photo_obtain_evidence_title">拍照取证</string>
+    <string name="commit_success">提交成功！</string>
+
+    <!--相机-->
+    <string name="take_pic">拍照</string>
+    <string name="open_flash_mode">打开闪光灯</string>
+    <string name="fail_take_photo">您的手机无法拍照</string>
+    <string name="lpr_tip">请将车牌放入扫描框中开始识别</string>
+
+    <!--订单界面-->
+    <string name="settlement_slip">结算凭条</string>
+    <string name="close_page">关闭页面</string>
+    <string name="print">打印</string>
+    <string name="order_company">管理单位：&#160;&#160;&#160;%1$s</string>
+    <string name="order_company_default"><![CDATA[管理单位：   —]]></string>
+    <string name="order_car_plate">车&#160;&#160;牌&#160;&#160;号：&#160;&#160;&#160;%1$s</string>
+    <string name="order_car_plate_default"><![CDATA[车  牌  号：   —]]></string>
+    <string name="order_berth_code">泊&#160;&#160;位&#160;&#160;号：&#160;&#160;&#160;%1$s</string>
+    <string name="order_berth_code_default"><![CDATA[泊  位  号：   —]]></string>
+    <string name="order_section">停车路段：&#160;&#160;&#160;%1$s</string>
+    <string name="order_section_default"><![CDATA[停车路段：   —]]></string>
+    <string name="order_car_type">车辆类型：&#160;&#160;&#160;%1$s</string>
+    <string name="order_car_type_default"><![CDATA[车辆类型：   —]]></string>
+    <string name="order_user">收&#160;&#160;费&#160;&#160;员：&#160;&#160;&#160;%1$s</string>
+    <string name="order_user_default"><![CDATA[收  费  员：   —]]></string>
+    <string name="order_user_tel">管理员电话：&#160;&#160;&#160;%1$s</string>
+    <string name="order_user_tel_default"><![CDATA[管理员电话：   —]]></string>
+    <string name="order_start_time">驶入时间：&#160;&#160;&#160;%1$s</string>
+    <string name="order_start_time_default"><![CDATA[驶入时间：   —]]></string>
+    <string name="order_end_time">驶离时间：&#160;&#160;&#160;%1$s</string>
+    <string name="order_end_time_default"><![CDATA[驶离时间：   —]]></string>
+    <string name="order_car_color">车牌颜色：&#160;&#160;&#160;%1$s</string>
+    <string name="order_car_color_default"><![CDATA[车牌颜色：   —]]></string>
+    <string name="title_print">打印凭条</string>
+    <string name="order_tips">温馨提示：%1$s</string>
+    <string name="order_pay_and_print">结算并打印</string>
+    <string name="order_pay">结算</string>
+    <string name="order_free_exit">免费驶出</string>
+    <string name="print_again">重新打印</string>
+    <string name="order_time_long">停车时长：&#160;&#160;&#160;%1$s</string>
+    <string name="order_time_long_default"><![CDATA[停车时长：   —]]></string>
+    <string name="order_pay_money">缴费金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="order_pay_money_default"><![CDATA[缴费金额：   —]]></string>
+    <string name="confirm_escape">确认逃逸</string>
+    <string name="arrear_money">欠费金额:</string>
+    <string name="pay_now">立即补缴</string>
+    <string name="arrears_count">欠费总笔数：&#160;&#160;&#160;%1$s笔</string>
+    <string name="arrears_count_default"><![CDATA[欠费总笔数：   —]]></string>
+    <string name="arrears_money">欠费总金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="arrears_money_default"><![CDATA[欠费总金额：   —]]></string>
+    <string name="back_num">补缴笔数：&#160;&#160;&#160;%1$s笔</string>
+    <string name="back_num_default"><![CDATA[补缴笔数：   —]]></string>
+    <string name="back_money">补缴金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="back_money_default"><![CDATA[补缴金额：   —]]></string>
+    <string name="order_arrears">补缴</string>
+    <string name="pre_pay_default"><![CDATA[预收金额：   —]]></string>
+    <string name="pre_pay">预收金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="actual_pay_default"><![CDATA[实收金额：   —]]></string>
+    <string name="actual_pay">实收金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="arrears_default"><![CDATA[欠费金额：   —]]></string>
+    <string name="arrears_pay">欠费金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="reback_default"><![CDATA[退费金额：   —]]></string>
+    <string name="reback">退费金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="card_balance">余      额：&#160;&#160;&#160;%1$s元</string>
+    <string name="card_balance_default"><![CDATA[余      额：   —]]></string>
+    <string name="pay_type">支付方式：&#160;&#160;&#160;%1$s</string>
+    <string name="pay_type_default"><![CDATA[支付方式：   —]]></string>
+    <string name="order_finish_is_print">订单结算成功，是否打印小票？</string>
+    <string name="order_finish">订单结算成功</string>
+    <string name="berth_price">所需金额：</string>
+    <string name="settlement_title_confirm_tip">智慧路边停车收费结算预览</string>
+    <string name="settlement_should_pay">应收金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="settlement_should_pay_default"><![CDATA[应收金额：   —]]></string>
+    <string name="settlement_pre_pay">预收金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="settlement_pre_pay_default"><![CDATA[预收金额：   —]]></string>
+    <string name="settlement_supplement_pay">补收金额：</string>
+    <string name="submit_settlement">结算</string>
+    <string name="force_close_order">强制关单</string>
+    <string name="settlement_title_confirm">结算确认</string>
+    <string name="settlement_refund">退款金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="settlement_refund_default"><![CDATA[退款金额：   —]]></string>
+    <string name="pre_pay_type_default"><![CDATA[预缴方式：   —]]></string>
+    <string name="order_balance_default"><![CDATA[余      额：   —]]></string>
+    <string name="disclaimer">免责声明：</string>
+
+    <string name="order_arrears_money">%1$s元（%2$d笔）</string>
+
+    <!-- 上海-->
+    <string name="order_invoice_code">发票号码：&#160;&#160;&#160;%1$s</string>
+    <string name="order_invoice_code_default"><![CDATA[发票号码：   —]]></string>
+
+    <!-- 打印相关字段 -->
+    <!-- 标题打印 -->
+    <string name="order_title">智慧路边停车收费计时凭条</string>
+    <string name="order_title_pay">智慧路边停车收费结算凭条</string>
+    <string name="order_title_day_charge">智慧路边停车当日收费统计</string>
+    <string name="order_title_arrears_pay">智慧路边停车收费补缴凭条</string>
+
+    <!-- 订单打印 -->
+    <string name="order_print_management_unit">管理单位</string>
+    <string name="order_print_terminal_num">终 端 号</string>
+    <string name="order_print_car_num">车 牌 号</string>
+    <string name="order_print_berth_code">泊 位 号</string>
+    <string name="order_print_car_type">车辆类型</string>
+    <string name="order_print_parking_lot">停车路段</string>
+    <string name="order_print_admin">收 费 员</string>
+    <string name="order_print_admin_tel">管理员电话</string>
+    <string name="order_print_in_time">驶入时间</string>
+    <string name="order_print_charge_time">计费开始时间</string>
+    <string name="order_print_out_time">驶离时间</string>
+    <string name="order_print_bill_duration">停车时长</string>
+    <string name="order_print_should_pay">缴费金额</string>
+    <string name="order_print_arrears_money">历史欠费</string>
+    <string name="order_print_arrears_order_num">补缴笔数</string>
+    <string name="order_print_arrears_total_income">补缴金额</string>
+    <string name="order_print_pre_pay">预收金额</string>
+    <string name="order_print_pay_way">支付方式</string>
+    <string name="order_print_actual_pay">实收金额</string>
+    <string name="order_print_actual_arrears_pay">实补金额</string>
+    <string name="order_print_actual_back_pay">实退金额</string>
+    <string name="refund_print_money">退费金额</string>
+    <string name="order_print_pre_pay_type">预缴方式</string>
+    <string name="order_print_arrears_pay">欠费金额</string>
+
+    <!-- 当日缴费统计打印 -->
+    <string name="charge_admin_name">收费员名称</string>
+    <string name="charge_admin_num">收费员编号</string>
+    <string name="charge_order_num">订单收入笔数</string>
+    <string name="charge_total_income">订单收入总金额</string>
+    <string name="charge_total_income_cash">  现金</string>
+    <string name="charge_total_income_webchatpay">  微信</string>
+    <string name="charge_total_income_alipay">  支付宝</string>
+    <string name="charge_total_income_unionpay">  银行卡</string>
+    <string name="charge_total_income_poscard">  合肥通</string>
+    <string name="charge_total_income_app">  APP停车</string>
+    <string name="charge_arrears_order_num">欠费补缴笔数</string>
+    <string name="charge_arrears_total_income">欠费补缴总金额</string>
+    <string name="charge_escape_order_num">欠费未补缴笔数</string>
+    <string name="charge_escape_total_income">欠费未补缴总金额</string>
+    <string name="charge_print_date">打印时间</string>
+
+
+    <!--蓝牙连接-->
+    <string name="bluetooth_page_title">蓝牙配置管理</string>
+    <string name="the_last_connect_device">最近连接过的设备</string>
+    <string name="can_use_device">扫描出可用的设备</string>
+    <string name="scan">扫描</string>
+    <string name="scan_new_equipment">扫描新设备</string>
+    <string name="you_device_not_support_bluetooth">您的设备不支持蓝牙</string>
+    <string name="had_connect_bluetooth">已连接蓝牙设备</string>
+    <string name="connect_fail">连接失败</string>
+    <string name="had_connect_device_with">已与设备建立连接%1$s</string>
+    <string name="connecting_device">正在连接设备&#8230;</string>
+    <string name="search_bluetooth_device_now">正在搜索蓝牙设备</string>
+    <string name="bluetooth_has_open">蓝牙已经开启</string>
+    <string name="print_mistake">打印出错</string>
+    <string name="bluetooth_had_not_connect">蓝牙没有连接</string>
+    <string name="print_finish">打印完成</string>
+    <string name="scan_to_pay_from_wechat_or_ali">可通过微信或支付宝扫一扫支付</string>
+    <string name="bluetooth_not_connect">蓝牙未连接</string>
+    <string name="print_paper">打印凭条</string>
+    <string name="printer_out_of_paper">打印纸已用完,请及时补充</string>
+    <string name="printer_test_bt">打印测试</string>
+
+    <!--当日缴费-->
+    <string name="charge_day">当日缴费</string>
+    <string name="charge_user_name">收费员名称：&#160;&#160;&#160;%1$s</string>
+    <string name="charge_user_name_default"><![CDATA[收费员名称：   —]]></string>
+    <string name="charge_user_id">收费员编号：&#160;&#160;&#160;%1$s</string>
+    <string name="charge_user_id_default"><![CDATA[收费员编号：   —]]></string>
+    <string name="charge_income_account">订单收入笔数：&#160;&#160;&#160;%1$s笔</string>
+    <string name="charge_income_account_default"><![CDATA[订单收入笔数：   —]]></string>
+    <string name="charge_income_money">订单收入总金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default"><![CDATA[订单收入总金额：   —]]></string>
+    <string name="charge_income_money_cash">现金：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default_cash"><![CDATA[现金：   —]]></string>
+    <string name="charge_income_money_webchatpay">微信：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default_webchatpay"><![CDATA[微信：   —]]></string>
+    <string name="charge_income_money_alipay">支付宝：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default_alipay"><![CDATA[支付宝：   —]]></string>
+    <string name="charge_income_money_union_pay">银行卡：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default_union_pay"><![CDATA[银行卡：   —]]></string>
+    <string name="charge_income_money_poscard">合肥通：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default_poscard"><![CDATA[合肥通：   —]]></string>
+    <string name="charge_income_money_app">APP停车：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_income_money_default_app"><![CDATA[APP停车：   —]]></string>
+    <string name="charge_arrears_account">欠费补缴笔数：&#160;&#160;&#160;%1$s笔</string>
+    <string name="charge_arrears_account_default"><![CDATA[欠费补缴笔数：   —]]></string>
+    <string name="charge_arrears_money">欠费补缴总金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_arrears_money_default"><![CDATA[欠费补缴总金额：   —]]></string>
+    <string name="charge_arrears_escapes_account">欠费逃逸笔数：&#160;&#160;&#160;%1$s笔</string>
+    <string name="charge_arrears_escapes_account_default"><![CDATA[欠费逃逸笔数：   —]]></string>
+    <string name="charge_arrears_escape_money">欠费逃逸总金额：&#160;&#160;&#160;%1$s元</string>
+    <string name="charge_arrears_escape_money_default"><![CDATA[欠费逃逸总金额：   —]]></string>
+    <string name="charge_print_time">打印时间：&#160;&#160;&#160;%1$s</string>
+    <string name="charge_print_time_default"><![CDATA[打印时间：   —]]></string>
+    <string name="no_charge_record">没有收费记录</string>
+
+    <!--密码-->
+    <string name="changePw">修改密码</string>
+    <string name="please_enter_old_password">请输入原密码</string>
+    <string name="please_enter_new_password">请输入新密码</string>
+    <string name="please_enter_new_password_again">请再次输入新密码</string>
+    <string name="twice_new_password_differ">您输入的新密码不一致</string>
+    <string name="enter_wrong_password">原密码输入错误</string>
+    <string name="change_success_login_again">修改成功，请重新登录</string>
+
+    <!-- 选择结算方式页面 -->
+    <string name="settlement_sign">结算-%1$s</string>
+    <string name="please_choose_pay_type">请选择结算方式</string>
+    <string name="please_rush_card">请刷一卡通</string>
+    <string name="pay_success">支付成功</string>
+
+    <string name="is_the_latest_version">已是最新版本</string>
+
+    <!-- 二维码界面 -->
+    <string name="qr_title">二维码</string>
+    <string name="qr_print_inv">打印发票</string>
+    <string name="qr_confirm_pay">确认支付</string>
+    <string name="qr_order_no_pay">订单未支付</string>
+    <string name="qr_order_pay_success">支付成功!</string>
+    <string name="qr_order_pay_success_tip">支付成功,%1$s元已到账</string>
+    <string name="qr_order_pay_fail_tip">支付失败</string>
+
+    <!-- 单位 -->
+    <string name="arrears_count_company">%1$s笔</string>
+    <string name="rmb_company_s">%1$s元</string>
+    <string name="rmb_company">元</string>
+    <string name="rmb_symbol">￥%1$s</string>
+
+    <!-- 功能菜单 -->
+    <string name="function_menu_title">功能菜单</string>
+    <string name="reprint_receipts_bt">重印凭证</string>
+    <string name="invoice_setting_bt">发票设置</string>
+    <string name="configuration_management_bt">配置管理</string>
+
+    <!-- 配置理 -->
+    <string name="cm_version_update">版本更新</string>
+    <string name="cm_version_update_tip">手动更新最新版本</string>
+    <string name="cm_bluetooth_settings">蓝牙设置</string>
+    <string name="cm_bluetooth_settings_tip">设置连接到蓝牙设备</string>
+
+    <!-- 根据订单搜车牌 -->
+    <string name="settlement_bt">订单结算</string>
+    <string name="search_order_page_tip">请输入车牌号搜索</string>
+    <string name="search_order_page_no_data">没有搜索到订单哦</string>
+    <string name="berth_settlement_in">进</string>
+    <string name="car_num_search">车牌号搜索</string>
+    <string name="berth_code_search">泊位号搜索</string>
+
+    <!-- 重复车牌停车dialog -->
+    <string name="dialog_repeat_parking_ok">查看停车</string>
+    <string name="dialog_repeat_parking_close">关闭</string>
+
+    <!-- 选择支付页面 -->
+    <string name="cash">现金</string>
+    <string name="card">一卡通</string>
+    <string name="pay_fail_arrears_toast">此订单是欠费订单，请进入欠费补缴菜单。</string>
+
+    <!-- 支付方式 -->
+    <string name="balance">余额</string>
+    <string name="pay_cash">现金</string>
+    <string name="pay_one_card">一卡通</string>
+    <string name="pay_balance">余额</string>
+    <string name="pay_wechat">微信</string>
+    <string name="pay_ali">支付宝</string>
+    <string name="pay_union_card">银联</string>
+
+    <!-- 缴费查询 -->
+    <string name="charge_query_title">缴费查询</string>
+    <string name="charge_self">本人缴费</string>
+    <string name="charge_team">团队缴费</string>
+
+    <!-- 欠费&正在进行中订单item -->
+    <string name="pub_car_plate">车牌号：</string>
+    <string name="pub_berth_num">泊位号：</string>
+    <string name="pub_section_name">岗位：</string>
+    <string name="pub_car_type">车辆类型：</string>
+    <string name="pub_car_color">车牌颜色：</string>
+
+    <!-- 团队缴费 -->
+    <string name="charge_team_select_personnel">选择人员:</string>
+    <string name="charge_team_select_personnel_all">全部</string>
+    <string name="charge_team_select_date">选择日期:</string>
+    <!-- 队员缴费item -->
+    <string name="charge_item_toll_collector_name">收费员名称:</string>
+    <string name="charge_item_price">金额:</string>
+    <string name="charge_item_date">时间:</string>
+
+    <!-- 选择人员 -->
+    <string name="charge_select_personnel_title">选择人员</string>
+    <!-- 选择日期 -->
+    <string name="charge_select_date_title">选择日期</string>
+
+    <!-- 五次以上欠费列表 item -->
+    <string name="item_car_num">车牌号：</string>
+    <string name="item_car_num_color">车牌颜色：</string>
+    <string name="item_arrears_total_num">欠费总笔数：</string>
+    <string name="item_order_ing">正在停车</string>
+
+    <string name="arrears_multi_title">多次欠费列表</string>
+    <string name="arrears_multi_bt">多次欠费</string>
+
+    <!-- 单个车牌五次以上欠费汇总 -->
+    <string name="arrears_multi_total_title">欠费汇总</string>
+    <string name="arrears_multi_total_tip_ing">正在进行中订单</string>
+    <string name="arrears_multi_total_tip_history">历史欠费订单</string>
+
+    <string name="order_section_name_ing">正在停车路段：&#160;&#160;&#160;%1$s</string>
+    <string name="order_section_name_ing_default"><![CDATA[正在停车路段：   —]]></string>
+    <string name="order_berth_code_ing">正在停车泊位号：&#160;&#160;&#160;%1$s</string>
+    <string name="order_berth_code_ing_default"><![CDATA[正在停车泊位号：   —]]></string>
+
+    <!-- 自主缴费 -->
+
+    <string name="car_had_pay">车辆已缴费</string>
+    <string name="sure_car_status">请确认车辆是否已驶离泊位</string>
+    <string name="not_leave">未驶离</string>
+    <string name="had_leave">已驶离</string>
+    <string name="sure_car">确认车辆</string>
+    <string name="sure_car_leave">确认车辆驶离吗</string>
+    <string name="sure_car_not_leave">确认车辆未驶离吗</string>
+
+    <!--预约功能-->
+    <string name="cancel_reserved">取消预约</string>
+    <string name="reserved_section">预约路段：&#160;&#160;&#160;%1$s</string>
+    <string name="reserved_berth">预约泊位：&#160;&#160;&#160;%1$s</string>
+    <string name="reserved_car_plate">预约车牌：&#160;&#160;&#160;%1$s</string>
+    <string name="reserved_time_default"><![CDATA[预约时间：   —]]></string>
+    <string name="reserved_time">预约时间：%1$s</string>
+    <string name="reserved_left_time">剩余时间：&#160;&#160;&#160;%1$s</string>
+    <string name="reserved_fee">预约费用：&#160;&#160;&#160;%1$s元</string>
+    <string name="reserved_detail">预约详情</string>
+    <string name="please_confirm_cancel_reserved_order">确认是否取消泊位预约？</string>
+    <string name="not_cancel">暂不取消</string>
+    <string name="deal_reserved">已占位</string>
+    <string name="not_deal_reserved">待占位</string>
+    <string name="reserved_list">预约列表</string>
+    <string name="reserved_error">预约泊位错误</string>
+    <string name="confirm_is_deal_reserved">确认是否完成泊位占位操作?</string>
+    <string name="had_deal">已完成</string>
+    <string name="not_deal">未完成</string>
+
+    <!-- 资金管理 -->
+    <string name="cash_tie_off_bt">现金扎帐</string>
+    <string name="cash_tie_off_detail_bt">扎帐明细</string>
+
+    <string name="charge_no_tie_default">未扎帐金额：&#160;&#160;&#160;</string>
+    <string name="cash_tie_off_commit_title">扎帐确认</string>
+    <string name="cash_tie_item_employee_num">员&#160;&#160;工&#160;&#160;号:&#160;&#160;&#160;%1$s</string>
+    <string name="cash_tie_item_price">扎帐金额:&#160;&#160;&#160;%1$s</string>
+    <string name="cash_tie_item_date">扎帐日期:&#160;&#160;&#160;%1$s</string>
+
+    <string name="cash_tie_success">扎帐成功</string>
+    <string name="cash_tie_fail">扎帐失败，请重试</string>
+    <string name="cash_tie_fail_reason">失败原因：%1$s</string>
+    <string name="cash_tie_fail_dialog_tip">上传记录失败，请联系后台人员\n员工号：&#160;&#160;&#160;%1$s\n扎帐金额：&#160;&#160;&#160;%2$s\n扎帐日期：&#160;&#160;&#160;%3$s\n</string>
+    <string name="cash_tie_re_fail_dialog_tip">上传记录失败，请重新上传</string>
+    <string name="cash_tie_off_commit_subtitle">合肥路边停车收费扎帐确认</string>
+    <string name="cash_tie_item_time">扎帐时间:&#160;&#160;&#160;%1$s</string>
+    <string name="cash_tie_item_terminal_num">终&#160;&#160;端&#160;&#160;号:&#160;&#160;&#160;%1$s</string>
+    <string name="no_data_cash_tie_off_history">暂无扎帐明细哦</string>
+    <string name="no_data_cash_tie_off">暂无未扎帐记录哦</string>
+    <string name="cash_tie_off_none_history">未扎帐记录</string>
+
+    <string name="berth_qrcode_pay_result">查看付款结果</string>
+    <string name="berth_qrcode_still_go_back">仍然返回</string>
+    <string name="berth_qrcode_check_result">查看结果</string>
+    <string name="berth_qrcode_marked">如已扫码扎帐，请查看结果后返回</string>
+    <string name="berth_qrcode_checking">正在查询，请稍后，勿退出程序</string>
+    <string name="berth_qrcode_cash_success">扎帐成功</string>
+    <string name="berth_qrcode_back_to_pay">返回支付</string>
+    <string name="berth_qrcode_check_again">重新查询</string>
+    <string name="berth_qrcode_tautology_later">当前系统暂未收到扫码记录，请稍后重试</string>
+    <string name="car_is_leave">订单已结算</string>
+
+
+    <!--push-->
+    <string name="berth_monitor_push_str">有新的泊位数据，点此刷新</string>
+    <string name="berth_stop_no_data">尚无停车数据</string>
+    <string name="berth_stop_print_in_str">打印进场小票</string>
+
+    <!-- 消息 -->
+    <string name="push_list_title">消息</string>
+    <string name="push_business_type_str">业务类型</string>
+    <string name="push_business_type_in">车辆驶入</string>
+    <string name="push_business_type_out">车辆驶出</string>
+    <string name="push_business_type_arrears_out">车辆欠费驶离</string>
+    <string name="push_business_type_sign_in">签到消息</string>
+    <string name="push_business_type_sign_out">签退消息</string>
+    <string name="push_item_voice_time">时间</string>
+    <string name="push_list_no_data">没有搜索到消息哦</string>
+    <string name="push_list_no_register">未登记</string>
+    <!--String content = ""+name+"先生，您好,您已签到成功,签到路段为"+sectionname+"；签到时间为"+time+";感谢您的付出，祝您工作顺利！";-->
+    <string name="push_sign_in_str">尊敬的“%1$s”，您好；您已签到成功，签到路段为“%2$s”；签到时间为%3$s；感谢您的付出，祝您工作顺利！</string>
+    <!--"尊敬的"+name+"先生，您好,您已签退成功；签退时间为"+time+"；感谢您的付出！";-->
+    <string name="push_sign_out_str">尊敬的“%1$s”，您好；您已签出成功；签出时间为%2$s；感谢您的付出，祝您工作顺利！</string>
+
+    <!--车牌修改-->
+    <string name="berth_car_plate_photo_desc">车牌识别：</string>
+    <string name="berth_car_plate_confirm">确定</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SearchEtLayout">
+
+        <!-- 顶部提示语 -->
+        <attr name="seTipText" format="reference|string" />
+
+        <!-- 顶部提示语字体颜色 默认 #969696 -->
+        <attr name="seTipTextColor" format="reference|color" />
+
+        <!-- 顶部提示语字体大小 默认16sp-->
+        <attr name="seTipTextSize" format="reference|dimension" />
+
+        <!-- 顶部提示语是否显示 默认显示 -->
+        <attr name="seTipTextIsGone" format="reference|dimension" />
+
+        <!-- 输入框右边按钮文字 默认“搜索”-->
+        <attr name="seBtText" format="reference|string" />
+
+        <!-- 输入框右边按钮背景 默认“统一蓝色按钮样式”-->
+        <attr name="seBtBackground" format="reference|color" />
+        <attr name="isCanSwitch" format="boolean" />
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    publishNonDefault true
+    defaultPublishConfig "codenormalRelease"
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    flavorDimensions "default"
+//    productFlavors {
+//
+//        codetest {
+//
+//        }
+//        codenormal {
+//
+//        }
+//    }
+//    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    //通过游览器查看手机本地数据库
+    compile 'com.facebook.stetho:stetho:1.5.0'
+    //这里正式环境添加检测代码
+//    codereleaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+}

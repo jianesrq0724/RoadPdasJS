@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/sv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/background_fl"
+        layout="@layout/camera_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_camera_onpreview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_takepic"
+            style="@style/submit_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/take_pic"
+            android:textSize="@dimen/text_24_dimens"/>
+
+        <Button
+            android:id="@+id/btn_flashmode"
+            style="@style/submit_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/open_flash_mode"
+            android:textSize="@dimen/text_24_dimens"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_camera_aftertake"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_save_pic"
+            style="@style/submit_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/camera_submit"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageButton
+            android:id="@+id/btn_cancel_pic"
+            style="@style/submit_button_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/camera_cancel"
+            android:contentDescription="@string/app_name"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_camera_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/camera_front"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageView
+        android:id="@+id/iv_go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/camera_back"
+        android:contentDescription="@string/app_name"/>
+
+</FrameLayout>

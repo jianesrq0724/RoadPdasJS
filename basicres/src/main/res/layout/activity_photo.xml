@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 大图页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <include
+        layout="@layout/pub_tool_bar"/>
+    
+    <com.ecaray.e_pda.pub.view.photo.ZoomImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/pub_default_loading"
+        android:layout_below="@+id/pub_tb"/>
+    
+</RelativeLayout>

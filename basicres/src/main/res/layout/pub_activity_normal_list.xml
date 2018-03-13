@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用列表页面（没有下拉刷新，上拉加载） -->
+<RelativeLayout android:id="@+id/drawer_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <include
+        layout="@layout/pub_tool_bar"/>
+
+    <!-- 顶部View -->
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pub_tb"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
+    <!-- 下拉刷新ListView -->
+
+    <com.ecaray.e_pda.pub.view.swipe.ListViewPublic
+        android:id="@+id/public_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:layout_below="@+id/ll_header"
+        android:layout_above="@+id/ll_footer"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent">
+    </com.ecaray.e_pda.pub.view.swipe.ListViewPublic>
+
+    <!-- 数据加载失败的显示 -->
+    <include
+        android:id="@+id/page_load_fail_ic"
+        layout="@layout/page_load_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:layout_above="@+id/ll_footer"
+        android:visibility="gone"/>
+    <!-- 数据为空时的显示 -->
+    <include
+        android:id="@+id/page_no_data_ic"
+        layout="@layout/page_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_header"
+        android:layout_above="@+id/ll_footer"
+        android:visibility="gone"/>
+
+    <!-- 底部View -->
+    <RelativeLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
+    <!-- 自定义系统键盘 -->
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="@style/KeyboardView_style"
+        android:visibility="gone"/>
+</RelativeLayout>

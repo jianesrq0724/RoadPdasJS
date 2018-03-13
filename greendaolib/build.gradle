@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    //亿车网络框架
+    compile('com.github.goEcar:EcarNetFream:1.6.1') {
+        exclude group: "com.github.goEcar", module: "EcarEncryption"
+        exclude group: "com.github.goEcar", module: "RxbusKim"
+    }
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'org.greenrobot:greendao:3.2.2'
+//    compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.0'
+
+}
+
+greendao {
+    schemaVersion 8//数据库版本号
+    daoPackage 'com.ecarary.epark.greendao'//设置DaoMaster、DaoSession、Dao包名
+//    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}

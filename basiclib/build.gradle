@@ -1,0 +1,80 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //亿车车牌识别
+    api 'com.github.goEcar:EcarRecog:1.1.1'
+
+    //文通识别库(TF卡识别)
+    api 'com.github.goEcar:EcarWintoneSeria:2.0.4'
+
+    api 'com.github.goEcar:EcarEncryption:1.3.2'
+    //亿车工具类
+    api ('com.github.goEcar:EcarUtil:1.2.2'){
+        exclude group: "com.github.goEcar", module: "RxbusKim"
+    }
+    //亿车缓存框架
+    api ('com.github.goEcar:EcarCache:V1.0.3'){
+        exclude group: "com.github.goEcar", module: "RxbusKim"
+    }
+    //glide
+    api 'com.github.bumptech.glide:glide:4.4.0'
+    //时间工具类
+    api 'joda-time:joda-time:2.3'
+    //百度地图
+    api 'com.github.goEcar:EcarBaiduMapOnly:1.0.3'
+    //loading加载圈效果
+    api 'com.wang.avi:library:2.1.3'
+
+
+    api 'com.github.goEcar:EcarNetFream:1.6.1'
+
+    api 'com.google.zxing:core:3.3.0'
+
+    //方法数过多
+    api 'com.android.support:multidex:1.0.3'
+
+    api project(":evoicelib")
+
+    //tinker热修复 && bugly
+    api 'com.github.goEcar:EcarBugly:1.0.4'
+
+
+    //轻型数据库litePal
+    api 'org.litepal.android:core:1.4.1'
+
+    api 'com.yichekeji:rxbus_annotation:0.0.7'
+    annotationProcessor 'com.yichekeji:rxbus_process:0.0.7'
+
+    api project(':componentlib')
+
+}

@@ -1,0 +1,175 @@
+apply plugin: 'com.dd.comgradle'
+
+/**采用解析Properties文件获取签名信息的方式，把签名放进版本控制不是明智的做法*/
+Properties props = new Properties()
+props.load(new FileInputStream(file("signing.properties")))
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    defaultConfig {
+        applicationId "com.ecaray.e_pda_js"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "BUGLY_APP_ID", '"e06ad1a2c9"'
+        manifestPlaceholders = [BAIDU_API_KEY: "appkey"]
+
+        ndk {
+            abiFilters "armeabi-v7a","x86"
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "app"]
+            }
+        }
+    }
+    //签名配置
+    signingConfigs {
+        debug {
+            keyAlias props['KEY_ALIAS']
+            keyPassword props['KEY_PASSWORD']
+            storeFile file(props['KEYSTORE_FILE'])
+            storePassword props['KEYSTORE_PASSWORD']
+        }
+        release {
+            //这样写就得把demo.jk文件放在项目目录
+            keyAlias props['KEY_ALIAS']
+            keyPassword props['KEY_PASSWORD']
+            storeFile file(props['KEYSTORE_FILE'])
+            storePassword props['KEYSTORE_PASSWORD']
+        }
+    }
+
+    buildTypes {
+        //开发环境
+        develop {
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.debug
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            buildConfigField "String", "APP_ID", '"111001 110000 110100 110000 110111 110101 110001 110000 110010"'
+            buildConfigField "String", "REQUEST_KEY", '"1000100 110011 110000 110010 111001 1000011 110111 110011 110100 110000 110110 110010 110010 110001 1000010 110000 110010 110000 110010 110110 1000010 110110 111000 110100 1000010 1000010 110000 110000 110101 110111 111001 1000011"'
+
+            //http://192.168.0.201:7090/std/data/（内网）
+            //http://www.szkljy.com:9007/std/data/（外网）
+//            buildConfigField "String", "Url_Common", '"http://www.szkljy.com:9007"'
+//            buildConfigField "String", "Url_DwonUp", '"http://www.szkljy.com:9007"'
+            buildConfigField "String", "Url_Common", '"http://192.168.9.220:7090"'
+            buildConfigField "String", "Url_DwonUp", '"http://192.168.9.220:7090"'
+            buildConfigField "int", "URL_TYPE", "0"
+            //是否需要本地异常日志
+            buildConfigField "boolean", "IS_CRASH", "false"
+        }
+        //测试环境
+        experiment {
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.debug
+            debuggable true
+            shrinkResources false
+
+            //6080结尾的key
+            buildConfigField "String", "APP_ID", '"111001 110000 110100 110000 110111 110101 110001 110000 110010"'
+            buildConfigField "String", "REQUEST_KEY", '"1100101 110001 110000 1100001 1100100 1100011 110011 111001 110100 111001 1100010 1100001 110101 111001 1100001 1100010 1100010 1100101 110101 110110 1100101 110000 110101 110111 1100110 110010 110000 1100110 111000 111000 110011 1100101"'
+            //是否需要本地异常日志
+            buildConfigField "boolean", "IS_CRASH", "false"
+            buildConfigField "int", "URL_TYPE", "1"
+
+            def
+                    eInnerUrl = '"http://192.168.9.103:8004"'
+
+            buildConfigField "String", "Url_Common", eInnerUrl
+            buildConfigField "String", "Url_DwonUp", eInnerUrl
+        }
+        //不混淆的测试包
+        experimentNotMinify.initWith(buildTypes.experiment)
+        experimentNotMinify {
+            matchingFallbacks = ['release']
+            //是否开启内存泄漏检测等开发lib
+            buildConfigField "boolean", "IS_TEST_CODE", "true"
+            def isMinifyEnabled = false;//混淆（打正式包）
+            debuggable true
+            minifyEnabled isMinifyEnabled
+            zipAlignEnabled isMinifyEnabled
+            shrinkResources isMinifyEnabled
+
+        }
+        debug {
+            matchingFallbacks = ['release']
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //是否需要本地异常日志
+            buildConfigField "boolean", "IS_CRASH", "false"
+
+            buildConfigField "String", "APP_ID", '"111001 110000 110100 110000 110111 110101 110001 110000 110010"'
+            buildConfigField "String", "REQUEST_KEY", '"1000100 110011 110000 110010 111001 1000011 110111 110011 110100 110000 110110 110010 110010 110001 1000010 110000 110010 110000 110010 110110 1000010 110110 111000 110100 1000010 1000010 110000 110000 110101 110111 111001 1000011"'
+            buildConfigField "int", "URL_TYPE", "2"
+
+            buildConfigField "String", "Url_Common", '"http://192.168.9.220:7090"'
+            buildConfigField "String", "Url_DwonUp", '"http://192.168.9.220:7090"'
+
+        }
+        release {
+            matchingFallbacks = ['release']
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //是否需要本地异常日志
+            buildConfigField "boolean", "IS_CRASH", "true"
+
+            buildConfigField "String", "APP_ID", '"111001 110000 110100 110000 110111 110101 110001 110000 110010"'
+            buildConfigField "String", "REQUEST_KEY", '"1000100 110011 110000 110010 111001 1000011 110111 110011 110100 110000 110110 110010 110010 110001 1000010 110000 110010 110000 110010 110110 1000010 110110 111000 110100 1000010 1000010 110000 110000 110101 110111 111001 1000011"'
+            buildConfigField "int", "URL_TYPE", "2"
+
+            buildConfigField "String", "Url_Common", '"http://192.168.9.220:7090"'
+            buildConfigField "String", "Url_DwonUp", '"http://192.168.9.220:7090"'
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    api project(':componentservice')
+
+
+
+    developImplementation project(':codenomallib')
+    experimentImplementation project(':codenomallib')
+    debugImplementation project(':codenomallib')
+    releaseImplementation project(':codenomallib')
+    experimentNotMinifyImplementation project(':codetestlib')
+
+}
+
+combuild {
+    applicationName = 'com.ecaray.e_pda_js.application.AppApplication'
+    isRegisterCompoAuto = true
+}
+

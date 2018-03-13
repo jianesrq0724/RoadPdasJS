@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="button_height">50dip</dimen>
+    <dimen name="pic_bt_height">50dip</dimen>
+
+    <dimen name="text_10_dimens">10sp</dimen>
+    <dimen name="text_11_dimens">11sp</dimen>
+    <dimen name="text_12_dimens">12sp</dimen>
+    <dimen name="text_13_dimens">13sp</dimen>
+    <dimen name="text_14_dimens">14sp</dimen>
+    <dimen name="text_15_dimens">15sp</dimen>
+    <dimen name="text_16_dimens">16sp</dimen>
+    <dimen name="text_17_dimens">17sp</dimen>
+    <dimen name="text_18_dimens">18sp</dimen>
+    <dimen name="text_19_dimens">19sp</dimen>
+    <dimen name="text_20_dimens">20sp</dimen>
+    <dimen name="text_21_dimens">21sp</dimen>
+    <dimen name="text_22_dimens">22sp</dimen>
+    <dimen name="text_23_dimens">23sp</dimen>
+    <dimen name="text_24_dimens">24sp</dimen>
+    <dimen name="text_25_dimens">25sp</dimen>
+    <dimen name="text_26_dimens">26sp</dimen>
+    <dimen name="text_27_dimens">27sp</dimen>
+    <dimen name="text_28_dimens">28sp</dimen>
+    <dimen name="text_29_dimens">29sp</dimen>
+    <dimen name="text_30_dimens">30sp</dimen>
+    <dimen name="text_31_dimens">31sp</dimen>
+    <dimen name="text_32_dimens">32sp</dimen>
+    <dimen name="text_33_dimens">33sp</dimen>
+    <dimen name="text_34_dimens">34sp</dimen>
+    <dimen name="text_35_dimens">35sp</dimen>
+    <dimen name="text_40_dimens">40sp</dimen>
+    <!--供渠道重写-->
+    <dimen name="text_detail_title_dimens">@dimen/text_20_dimens</dimen>
+    <dimen name="berth_item_monitor_state_size">25dp</dimen>
+
+
+</resources>

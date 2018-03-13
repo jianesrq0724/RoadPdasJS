@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/city_name_tv"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/pub_city_name_bg"
+    android:gravity="center"
+    android:padding="3dp"
+    android:textColor="@color/black"
+    android:textSize="30sp">
+</TextView>
+
+
